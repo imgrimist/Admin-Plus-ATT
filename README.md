@@ -1,6 +1,5 @@
 This adds "modes" to combat, you can cycle through each mode by breaking a crystal.
 
-----------
 PhantomMode: Puts phantoms on whoever you hit
 
 FallMode: Sends whoever you hit into the air
