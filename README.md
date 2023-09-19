@@ -5,7 +5,7 @@ Admin-Plus allows you to do admin abilities all ingame.
 To run abilities on players you need to "select" them.
 
 To select/deselect a player, cycle through `deselectMode`, `selectMode`, and `offMode` by breaking blue crystals (offMode does just turns off both modes).
-While you have deselect/select Mode enable, enter combat with the user you would like to select/deselect.
+While you have deselect/select Mode enabled, enter combat with the user you would like to select/deselect.
 
 ## **Features -------------------------------------------------------------------------------**
 
