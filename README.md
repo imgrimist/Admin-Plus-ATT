@@ -116,6 +116,6 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 ## **Remember to have these things installed for the bot to work** --------------------------------
    First install node.js: https://nodejs.org/en
-   After that, `run npm i att-client` in your terminal.
+   After that, run `npm i att-client` in your terminal.
    
 Please note that these instructions assume you have properly configured Admin-Plus with the required 'UserLogin.js' file.
