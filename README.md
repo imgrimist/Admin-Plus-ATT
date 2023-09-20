@@ -1,4 +1,4 @@
-## **Intro --------------------------------------------------**
+## **Intro**
 
 Admin-Plus allows you to do admin abilities all ingame.
 
@@ -9,7 +9,7 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 (To start the bot, open the folder's command prompt and type `node .`
 
-## **Features -------------------------------------------------------------------------------**
+## **Features**
 
 `Admin-Plus comes with a range of features to make your moderating sessions more enjoyable, such as:`
 
@@ -47,7 +47,7 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 `Self-Teleport:` Raise a crystal with your left hand to teleport yourself back to spawn.
 
-## **How to Use Admin-Plus Abilities --------------------------------------------------**
+## **How to Use Admin-Plus Abilities**
 `Below are detailed instructions on how to use each ability:`
 
 `Smite:`
@@ -120,7 +120,7 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
   - **Items Required**: Potion Medium (Left Hand)
   - **Activation**: Hold a TP Potion in your left hand and above your head to teleport yourself back to spawn.
 
-## **Remember to have these things installed for the bot to work** --------------------------------
+## **Remember to have these things installed for the bot to work**
    First install node.js: https://nodejs.org/en
    After that, run `npm i att-client` in your terminal.
    
