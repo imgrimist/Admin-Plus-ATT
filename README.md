@@ -13,6 +13,8 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 `Admin-Plus comes with a range of features to make your moderating sessions more enjoyable, such as:`
 
+`Smite:` Drops all selected player's loot.
+
 `Flash Effect:` Activate a flash effect.
 
 `Forge All Blades:` Automatically forge all blades.
@@ -47,6 +49,10 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 ## **How to Use Admin-Plus Abilities --------------------------------------------------**
 `Below are detailed instructions on how to use each ability:`
+
+`Smite:`
+  - **Items Required**: Flower Blue (Right Hand) and Crystal Gem Blue (Left Hand)
+  - **Activation**: Hold the Blue Flower in your right hand and 1 Blue crystal in your left hand above your head.
 
 `Flash Effect:`
   - **Items Required**: Torch (Right Hand) and Crystal Gem Blue (Left Hand)
