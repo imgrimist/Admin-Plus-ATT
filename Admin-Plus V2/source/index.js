@@ -42,9 +42,7 @@ var offMode = true;
 var selectMode = false;
 
 bot.on('connect', async (connection) => {
-    connection.send(`player message * "SorpoBot is ready..." 3`);
     console.log(`connected to ${connection.server.name}`);
-    
     setInterval(function() {        
 
         connection.send(`player inventory "${username}"`).then(resp => {
@@ -81,8 +79,24 @@ bot.on('connect', async (connection) => {
 
                     const torchR = jsonContainsString(resp.data.Result[0].RightHand, "Torch");
 
-                    
+                    const flowerBlueR = jsonContainsString(resp.data.Result[0].RightHand, "Flower Blue");
 
+                    //Smite selected
+                    if (tpeL && flowerBlueR && resp.data.Result[0].RightHand.Position[1] > resp2.data.Result.HeadPosition[1]) {
+                        console.log(`Smited selected`);
+                        connection.send(`player message "${username}" "Activated" 2`);
+
+                        for (var i = 0; i != selected.length; i++) {
+                            connection.send(`player downed-duration 0`);
+                            connection.send(`settings changesetting server DropAllOnDeath true`);
+                            connection.send(`player kill ${selected[i]}`);
+                            connection.send(`player downed-duration 40`);
+                            connection.send(`settings changesetting server DropAllOnDeath false`);
+
+                        }
+                        
+                    }
+                    
                     //Flash effect
                     if (tpeL && torchR && resp.data.Result[0].RightHand.Position[1] > resp2.data.Result.HeadPosition[1]) {
                         console.log(`Started flashing you (Pun intended)`);
