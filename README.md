@@ -58,9 +58,9 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
   - **Items Required**: Torch (Right Hand) and Crystal Gem Blue (Left Hand)
   - **Activation**: Hold the torch in your right hand and 1 Blue crystal in your left hand above your head.
 
-`Forge All Blades:`
-  - **Items Required**: Crystal Gem Blue (Left Hand) and Guard Handle (Right Hand)
-  - **Activation**: Hold 1 Blue Crystal in your left hand and a Guard Handle in your right hand above your head.
+`Reset Left Hand Item:`
+  - **Items Required**: [Item you want to reset] (Left Hand) and Guard Handle (Right Hand)
+  - **Activation**: Hold the item you want to reset in your left hand and a Guard Handle in your right hand above your head.
 
 `Item Duplication:`
   - **Items Required**: Guard Handle (Left Hand) and [Item You Want To Dupe] (Right Hand)
