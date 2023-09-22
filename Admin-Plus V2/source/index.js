@@ -50,6 +50,7 @@ bot.on('connect', async (connection) => {
                 
                 if (resp && resp.data.Result[0] && resp.data.Result[0]) {
                     const Rhand = jsonContainsString(resp.data.Result[0].RightHand, " ");
+                    const Lhand = jsonContainsString(resp.data.Result[0].LeftHand, " ");
 
                     const holdingSwordL = jsonContainsString(resp.data.Result[0].LeftHand, "Crystal Sword Blue");
 
@@ -108,11 +109,15 @@ bot.on('connect', async (connection) => {
                         
                     }
 
-                    //Forge all blades
-                    if (tpeL && guardHandleR && resp.data.Result[0].RightHand.Position[1] > resp2.data.Result.HeadPosition[1]) {
-                        console.log(`Forged all blades`);
+                    //Reset lefthand item items
+                    if (guardHandleR && Lhand && resp.data.Result[0].RightHand.Position[1] > resp2.data.Result.HeadPosition[1] && resp.data.Result[0]) {
+                        console.log(`Deleted lefthand item`);
                         connection.send(`player message "${username}" "Activated" 2`);
-                        connection.send(`progress forgeall`);
+                        if (resp.data.Result[0].RightHand) {
+                            const id = resp.data.Result[0].LeftHand.Identifier;
+
+                            connection.send(`wacky replace ${id}`);
+                        }
                     }
 
                     //Dupe righthand item items
@@ -139,7 +144,7 @@ bot.on('connect', async (connection) => {
                             teleport = true;
                             connection.send(`player message "${username}" "Activated" 2`);
                         } else {
-                            teleport = false
+                            teleport = false;
                             connection.send(`player message "${username}" "Deactivated" 2`);
                         }
                         
