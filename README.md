@@ -17,7 +17,7 @@ While you have deselect/select Mode enabled, enter combat with the user you woul
 
 `Flash Effect:` Activate a flash effect.
 
-`Forge All Blades:` Automatically forge all blades.
+`Reset Left Hand Item:` Reset any item you hold in your left hand to it's original form.
 
 `Item Duplication:` Duplicate your right-hand's item.
 
